@@ -1,0 +1,126 @@
+@import 'bootstrap/dist/css/bootstrap';
+
+
+.navbar {
+
+  background-color: #9ddfd3 !important;
+
+}
+
+#searchbtn {
+
+  background-color: #ffdada;
+  color: white;
+  border-color: #ffdada;
+}
+
+#searchbtn:hover {
+  background-color: #31326f;
+  border-color: #31326f;
+
+}
+
+.btn:hover {
+
+  background-color: #31326f;
+  border-color: #31326f;
+
+}
+
+.nav-link {
+
+  color: #31326f !important;
+
+}
+
+.nav-link:hover {
+
+  color: white !important;
+
+}
+
+.navbar-brand {
+
+  color: #31326f !important;
+  float: left;
+  font-size: 1.7em;
+  text-transform:  uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+
+}
+
+#home-container {
+  margin-top: 25px;
+}
+
+.vertical-center {
+  min-height: 80%;
+  min-height: 80vh;
+  align-items: center;
+}
+
+.jumbotron {
+  background-image: asset-url('jumbo-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#Aboutjumbo {
+background-image: asset-url('aboutpagejumbo.jpg');
+
+}
+
+#jumbo-btn {
+
+  background-color: #9ddfd3;
+  color: white;
+  border-color: #9ddfd3;
+
+}
+
+#jumbo-btn:hover {
+
+  background-color: #31326f;
+  border-color: #31326f;
+
+}
+
+#content-page {
+  background-color: #ffdada;
+}
+
+#formbackground {
+  background-color: #ffdada;
+}
+
+.wordlink:hover {
+  color: #31326f;
+}
+
+.wordlink {
+  color: #9ddfd3;
+}
+
+
+.form_labels {
+  color: #31326f;
+}
+
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background-color: white;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  background-color: #9ddfd3;
+  color: #31326f;
+}

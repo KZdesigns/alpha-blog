@@ -54,17 +54,21 @@
   margin-top: 25px;
 }
 
-.vertical-center {
-  min-height: 80%;
-  min-height: 80vh;
-  align-items: center;
-}
+// .vertical-center {
+//   min-height: 80%;
+//   min-height: 80vh;
+//   align-items: center;
+// }
 
 .jumbotron {
   background-image: asset-url('jumbo-image.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+#homejumbotron{
+  height: 600px
 }
 
 #Aboutjumbo {

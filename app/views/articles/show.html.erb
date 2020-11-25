@@ -5,7 +5,7 @@
           <div class="col-8 mt-4">
               <div class="card text-center shadow mb-5 bg-white rounded">
                 <div class="card-header font-italic text-muted">
-                  By Kyle Zimmerman
+                  By <%= @article.user.username %>
                 </div>
                 <div class="card-body">
                   <div class="card-text text-left"><%= simple_format(@article.description) %></div>
@@ -20,3 +20,4 @@
           </div>
       </div>
   </div>
+  <%= link_to '[ Cancel and return to articles listing ]', articles_path, class: "wordlink form-group row justify-content-center" %>

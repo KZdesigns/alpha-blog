@@ -16,7 +16,14 @@
                 </h5>
                 <p class="card-text"><%= pluralize(user.articles.count, "article") %></p>
                 <a <%= link_to "View profile", user, class: "btn btn-outline-success" %></a>
-                <a <%= link_to 'Edit Profile', edit_user_path(user), class: "btn btn-outline-info" %></a>
+                <% if logged_in? %>
+                  <% if user == current_user %>
+                    <a <%= link_to 'Edit Profile', edit_user_path(user), class: "btn btn-outline-info" %></a>
+                  <% end %>
+                  <% if current_user.admin? %>
+                    <a <%= link_to 'Delete user Profile', user_path(user), class: "btn btn-outline-danger", method: :delete, data: { confirm: "Are you sure you want to delete the user and all associated articles?"} %></a>
+                  <% end %>
+                <% end %>
               </div>
               <div class="card-footer text-muted">
                 <small>Joined <%= time_ago_in_words(user.created_at) %> ago</small>

@@ -21,9 +21,16 @@
           <% if logged_in? %>
             <%= link_to 'Create New Article', new_article_path, class: "dropdown-item" %>
           <% end %>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categories
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <%= link_to "Catagories List", categories_path, class: "dropdown-item" %>
+          <% if logged_in? && current_user.admin? %>
+            <%= link_to 'Create New Category', new_category_path, class: "dropdown-item" %>
+          <% end %>
       </li>
 
       <% if logged_in? %>

@@ -7,6 +7,11 @@
                 <div class="card-header font-italic text-muted">
                   <%= link_to gravatar_for(@article.user), user_path(@article.user) %>
                   <%= link_to "By #{@article.user.username}", user_path(@article.user), class: "text-reset articleby text-decoration-none" %>
+                <div>
+                  <% if @article.categories.any? %>
+                    <%= render @article.categories %>
+                  <% end %>
+                </div>
                 </div>
                 <div class="card-body">
                   <div class="card-text text-left"><%= simple_format(@article.description) %></div>
